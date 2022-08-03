@@ -5,6 +5,11 @@ class EnvironmentSettings:
         self.pretrained_networks = '/home/PRCV_com_2022/competition/MixFormer/pretrained_networks'
         self.lasot_dir = '/home/PRCV_com_2022/competition/MixFormer/data/lasot'
         self.got10k_dir = '/home/PRCV_com_2022/competition/MixFormer/data/got10k/train'
+        # prcv competition
+        self.competition_dir = '/home/PRCV_com_2022/competition/MixFormer/data/competition_prcv/data/train'
+        self.competition_val_dir = '/home/PRCV_com_2022/competition/MixFormer/data/competition_prcv/data/val'
+
+
         self.lasot_lmdb_dir = '/home/PRCV_com_2022/competition/MixFormer/data/lasot_lmdb'
         self.got10k_lmdb_dir = '/home/PRCV_com_2022/competition/MixFormer/data/got10k_lmdb'
         self.trackingnet_dir = '/home/PRCV_com_2022/competition/MixFormer/data/trackingnet'
