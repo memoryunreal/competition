@@ -80,7 +80,7 @@ pip install visdom
 echo ""
 echo ""
 echo "****************** Installing vot-toolkit python ******************"
-pip install git+https://github.com/votchallenge/vot-toolkit-python
+# pip install git+https://github.com/votchallenge/vot-toolkit-python
 
 echo ""
 echo ""
