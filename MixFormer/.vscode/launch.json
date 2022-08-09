@@ -10,11 +10,22 @@
             "request": "launch",
             "program": "/home/PRCV_com_2022/competition/MixFormer/tracking/train.py",
             "console": "integratedTerminal",
-            "args": ["--script", "mixformer", "--config", "baseline", "--save_dir", "/home/PRCV_com_2022/competition/checkpoints/stage1", "--mode", "single"],   
+            // "args": ["--script", "mixformer", "--config", "baseline", "--save_dir", "/home/PRCV_com_2022/competition/checkpoints/stage1", "--mode", "single"],   
+            "args": ["--script", "mixformer", "--config", "baseline_prcv", "--save_dir", "/home/PRCV_com_2022/competition/checkpoints/stage1", "--mode", "multiple", "--nproc_per_node", "8"],   
             "justMyCode": true
         },
         {           
             "name": "Python: train_mix_single",
+            "type": "python",
+            "request": "launch",
+            "program": "lib/train/run_training.py",
+            "console": "integratedTerminal",
+            "args": ["--script", "mixformer", "--config", "baseline_prcv", "--save_dir", "/home/PRCV_com_2022/competition/checkpoints/stage1", "--use_lmdb", "0", "--script_prv", "None", "--config_prv", "baseline", "--distill", "0", "--script_teacher", "None", "--config_teacher", "None", "--stage1_model", "None"],   
+            "justMyCode": true
+           
+        },
+        {           
+            "name": "Python: train_mix_multi",
             "type": "python",
             "request": "launch",
             "program": "lib/train/run_training.py",
