@@ -4,6 +4,10 @@ class EnvironmentSettings:
         self.tensorboard_dir = '/home/PRCV_com_2022/competition/OSTrack/tensorboard'    # Directory for tensorboard files.
         self.pretrained_networks = '/home/PRCV_com_2022/competition/OSTrack/pretrained_networks'
         self.lasot_dir = '/home/PRCV_com_2022/competition/OSTrack/data/lasot'
+         # prcv competition
+        self.competition_dir = '/home/PRCV_com_2022/competition/OSTrack/data/competition_prcv/data/train'
+        self.competition_val_dir = '/home/PRCV_com_2022/competition/OSTrack/data/competition_prcv/data/val'
+
         self.got10k_dir = '/home/PRCV_com_2022/competition/OSTrack/data/got10k/train'
         self.got10k_val_dir = '/home/PRCV_com_2022/competition/OSTrack/data/got10k/val'
         self.lasot_lmdb_dir = '/home/PRCV_com_2022/competition/OSTrack/data/lasot_lmdb'
